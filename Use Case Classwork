@@ -1,0 +1,40 @@
+Scope:
+Cash Withdrawal Application
+
+Level:
+User goal
+
+Primary Actor:
+Customer
+
+Stakeholders and Interests:
+- Customer: Wants correct amount of money quickly and easily from the ATM with a low fee.
+- Company: Wants customer to be satisfied with the ease, speed, and accuracy of money withdrawal, as well as obtain their fee.
+- Manager: Does not want to have to fix or perform maintenance such as a system reboot on the ATM.
+- Clerk: Does not want to have to fix or perform maintenance such as a system reboot on the ATM.
+
+Preconditions:
+ATM is running and ready/waiting for a card insertion.
+
+Success Guarantee (or Postconditions):
+Withdrawal is saved. Account balance is updated. Money is dispensed. Fee is taken from account.
+
+Main Success Scenario:
+1. The customer approaches the ATM.
+2. The customer inserts their card and then enters their pin.
+3. The ATM checks that the pin is correct.
+4. The customer is then informed of the fee along with the possible withdrawal values. They then select the amount of money they would like to withdraw.
+5. The customer confirms the withdrawal and accepts the fee to withdraw.
+6. The ATM adds the fee to the withdrawal value and updates the customer's account value.
+7. The ATM dispenses the correct amount of money to the customer.
+8. The ATM closes the transaction and requires a card to be inserted to start a new transaction.
+9. The customer retrieves the money and leaves the ATM.
+
+Extensions (or Alternative Flows):
+a. The ATM disconnects from the internet.
+    1. The ATM cannot confirm the PIN or update the customer's account.
+    2. The ATM will not let the customer insert their card.
+b. The ATM encounters a fatal operating system error.
+    1. The ATM will not let the customer insert their card.
+c. The ATM dispenses the incorrect amount of money.
+    1. The customer must go into the bank and speak to a teller.
